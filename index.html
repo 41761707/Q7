@@ -7,8 +7,8 @@
 		<title> Quality Team </title>
 	</head>
 	<body>
-		<div id="container">
-			<div id="header">
+		<div id="container" class="text-shadow">
+			<div id="header" style>
 				<div class="logo">
 					<h1>Quality 7</h1>
 				</div>
@@ -21,27 +21,42 @@
 				</div>
 				<div class="menu">
 					<ul>
-						<a class="link" href="my.html"><li class="list"> O nas </li></a>
-						<a class="link" href="konta.html"><li class="list"> Nasze Konta </li></a>
-						<a class="link" href="mecze.html"><li class="list"> Historia gier</li></a>
-						<a class="link" onclick="showFunction()"><li class="list"> Kontakt</li></a>
+						<a class="link" href="my.html"><li class="list text-shadow"> O nas </li></a>
+						<a class="link" href="konta.html"><li class="list text-shadow"> Nasze Konta </li></a>
+						<a class="link" href="mecze.html"><li class="list text-shadow"> Historia gier</li></a>
+						<a class="link" onclick="showFunction()"><li class="list text-shadow"> Kontakt</li></a>
 					</ul>	
 				</div>
 			</div>
-			<div id="content" style="display: none;">
-				<p>This panel contains a div element, which is hidden by default (display: none).</p>
-  <p>It is styled with CSS and we use JavaScript to show it (display: block).</p>
-  <p>How it works: Notice that the p element with class="flip" has an onclick attribute attached to it. When the user clicks on the p element, a function called myFunction() is executed, which changes the style of the div with id="panel" from display:none (hidden) to display:block (visible).</p>
-  <p>You will learn more about JavaScript in our JavaScript Tutorial.</p>
+			<div id="content" style="display:none;">
+				<h3> Chcesz dowiedzieć się czegoś więcej o naszej drużynie? </h3>
+				<h3> Albo umówić się na wspólny trening? </h3>
+				<hr/>
+				<p> Wypełnij formularz a z pewnością odpowiemy na wiadomość! </p>
+				<form>
+					<label for="fname">Twoja nazwa</label>
+    				<input type="text" id="fname" name="firstname" placeholder="Twoja nazwa"/>
+    				<label for="email">Email</label>
+    				<input type="text" id="email" name="email" placeholder="Email"/>
+    				<label for="message">Treść</label>
+    				<textarea type="text" id="message" name="message" placeholder="Twoja wiadomosc"></textarea>
+    				<input type="submit" value="Wyślij">
+    			<p onclick="hideFunction()"style="cursor:pointer;"><i><em><u>Zamknij </u></i></em></p>
 			</div>
 			<div id="footer">
 				<h1> 2020 Official Quality 7 website </h1>
 			</div>
 		</div>
 		<script>
-			function showFunction() 
+			function showFunction()
 			{
-  				document.getElementById("content").style.display = "block";
+					document.getElementById("content").style.display = "block";
+					document.getElementById("header").style.filter="blur(8px)"
+			}
+			function hideFunction()
+			{
+					document.getElementById("content").style.display = "none";
+					document.getElementById("header").style.filter="none"
 			}
 		</script>
 	</body>
