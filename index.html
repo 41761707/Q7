@@ -7,46 +7,47 @@
 		<title> Quality Team </title>
 	</head>
 	<body>
-		<div id="container" class="text-shadow">
-			<div id="header" style>
+		<main id="container" class="text-shadow">
+			<header id="header" style>
 				<div class="logo">
 					<h1>Quality 7</h1>
 				</div>
 				<hr>
-				<div class="description">
+				<article class="description">
 				<h1>
 					Strona glowna Quality7, ktorej glownym zadaniem jest zbieranie i analizowanie informacji na temat osiagniec naszej druzyny w grze League of Legends
 				</h1>
 				<hr>
-				</div>
-				<div class="menu">
+				</article>
+				<nav class="menu">
 					<ul>
 						<a class="link" href="my.html"><li class="list text-shadow"> O nas </li></a>
 						<a class="link" href="konta.html"><li class="list text-shadow"> Nasze Konta </li></a>
 						<a class="link" href="mecze.html"><li class="list text-shadow"> Historia gier</li></a>
 						<a class="link" onclick="showFunction()"><li class="list text-shadow"> Kontakt</li></a>
 					</ul>	
-				</div>
-			</div>
+				</nav>
+			</header>
 			<div id="content" style="display:none;">
 				<h3> Chcesz dowiedzieć się czegoś więcej o naszej drużynie? </h3>
 				<h3> Albo umówić się na wspólny trening? </h3>
 				<hr/>
 				<p> Wypełnij formularz a z pewnością odpowiemy na wiadomość! </p>
-				<form>
+				<form method="POST">
 					<label for="fname">Twoja nazwa</label>
-    				<input type="text" id="fname" name="firstname" placeholder="Twoja nazwa"/>
+    				<input type="text" id="fname" name="firstname" placeholder="Twoja nazwa" required/>
     				<label for="email">Email</label>
-    				<input type="text" id="email" name="email" placeholder="Email"/>
+    				<input type="text" id="email" name="email" placeholder="Email" required/>
     				<label for="message">Treść</label>
-    				<textarea type="text" id="message" name="message" placeholder="Twoja wiadomosc"></textarea>
+    				<textarea type="text" id="message" name="message" placeholder="Twoja wiadomosc" required></textarea>
     				<input type="submit" value="Wyślij">
-    			<p onclick="hideFunction()"style="cursor:pointer;"><i><em><u>Zamknij </u></i></em></p>
+    			<p id="close" onclick="hideFunction()"style="cursor:pointer;"><i><em><u>Zamknij </u></i></em></p>
+    			</form>
 			</div>
-			<div id="footer">
-				<h1> 2020 Official Quality 7 website </h1>
-			</div>
-		</div>
+			<footer id="footer">
+				<h1> &copy; 2020 Official Quality 7 website </h1>
+			</footer>
+		</main>
 		<script>
 			function showFunction()
 			{

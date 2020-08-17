@@ -3,6 +3,7 @@ body
 	background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
  	background-blend-mode: multiply;
 	width:100%;
+	box-sizing:border-box;
 }
 .text-shadow
 {
@@ -10,13 +11,12 @@ body
 }
 #container
 {
-	margin-left:auto;
-	margin-right:auto;
+	margin: 0 auto;
 	width:100%;
 }
 #header
 {
-	margin:5% 5% 5% 5%;
+	margin:5%;
 	padding:2%;
 	color:white;
 	text-align:center;
@@ -31,12 +31,12 @@ body
 	text-transform:uppercase;
 	opacity:0.95;
 	letter-spacing:0.2rem;
-	font-size:0.7vw;
+	font-size:1vw;
 	line-height:2vw;
 }
 .menu
 {
-	width: 90%;
+	width: 80%;
   	margin: 0 auto;
 }
 .list 
@@ -53,7 +53,7 @@ body
   	padding: 0.5rem 1.2rem 0.5rem 1.2rem;
   	transition: 0.3s;
   	font-size:1.5vw;
-  	margin:1%;
+  	margin:0.5%;
 }
 .list:hover
 {
@@ -63,10 +63,10 @@ body
 #content
 {
 	position: fixed;
-  	width: 80%;
-  	height: 80%;
-  	top: 10%;
-  	left: 10%;
+  	width: 70%;
+  	height: 70%;
+  	top: 15%;
+  	left: 15%;
   	right: 0;
   	bottom: 0;
   	background-color: rgba(0,0,0,0.85);
@@ -75,21 +75,35 @@ body
   	color:white;
 	font-family:monospace;
 	font-size:1.5vw;
+	overflow:scroll;
 }
 #content.h3
 {
 	transform: translate(-50%,-50%);
 }
-input[type=text], select, textarea 
+input[type=text], textarea, submit
 {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+	width:100%;
+	font-family:inherit;
+  	padding: 12px; 
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+  	margin: 1% 1% 1% 1%;
+  	resize: vertical;
+}
+input[type=submit]
+{
+	cursor:pointer;
+}
+#close
+{
+	margin: 1% auto;
+	width:20%;
+}
+#close:hover
+{
+	background-color:black;
 }
 #footer 
 {
