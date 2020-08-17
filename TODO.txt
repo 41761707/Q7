@@ -1,0 +1,6 @@
+Homepage (DONE)
+//altough think about better background style/colors
+Contact form (in progress, need to customize input windows + make it actually send a message to appointed mail
+TO DO
+Nasze konta
+O nas
