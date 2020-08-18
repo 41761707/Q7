@@ -81,8 +81,6 @@ body
 {
 	transform: translate(-50%,-50%);
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 input[type=text], textarea, submit
 {
 	width:100%;
@@ -106,25 +104,6 @@ input[type=submit]
 #close:hover
 {
 	background-color:black;
-=======
-input[type=text], textarea 
-{
-=======
-input[type=text], textarea 
-{
->>>>>>> 20e0082361ab716e0bde738e1fae7690889468d7
-  width: 100%; 
-  padding: 12px;  
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical
-<<<<<<< HEAD
->>>>>>> 20e0082361ab716e0bde738e1fae7690889468d7
-=======
->>>>>>> 20e0082361ab716e0bde738e1fae7690889468d7
 }
 #footer 
 {
