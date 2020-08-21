@@ -12,7 +12,7 @@ body
 {
 	padding:2%;
 	text-align:center;
-	line-height:2vw;
+	line-height:3.5vw;
 	font-size: 2vw;
 }
 #header>h1
@@ -26,38 +26,50 @@ body
 }
 .account
 {
-	margin: 0 auto;
+	display:flex;
+	margin: 5% auto 5% auto;
 	width:85%;
-	border: 1px solid white;
+	box-shadow: 10px 10px 10px 9px rgba(240,248,255,1);
 	font-family:"Helvetica", sans-serif;
-	box-sizing: border-box;
-	height:300px;
+}
+.account:nth-of-type(odd)
+{
+	flex-direction: row-reverse;
 }
 .nickname
 {
-	padding:1%;
+	align-self: stretch;
+	text-align: center;
+	padding:5%;
 	font-size:2vw;
 	background-color:#a2b9bc;
 	text-shadow:2px 2px 8px #000000;
 	float:both;
 }
-.division
+.division, .role
 {
-	padding:1%;
-	width:24%;
+	letter-spacing: 0.1rem;
+	line-height: 1.5vw;
+	align-self:center;
+	text-align:center;
+	padding:2%;
 	float:left;
 }
-.role
+.photo
 {
-	padding:1%;
-	width:24%;
-	float:left;
+	width:120px;
+	height:120px;
 }
 .champions
 {
+	align-self:stretch;
+	text-align:center;
 	padding:1%;
-	width:52%;
 	float:left;
+}
+.champion-photo > img
+{
+	width:55%;
 }
 .match_history
 {
