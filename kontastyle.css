@@ -1,0 +1,66 @@
+body
+{
+	background-color:#202020;	
+}
+#container
+{
+	width:100%;
+	color:white;
+	font-family:"Helvetica";
+}
+#header
+{
+	padding:2%;
+	text-align:center;
+	line-height:2vw;
+	font-size: 2vw;
+}
+#header>h1
+{
+	letter-spacing:0.4rem;
+
+}
+#header>p
+{
+	letter-spacing:0.2rem;
+}
+.account
+{
+	margin: 0 auto;
+	width:85%;
+	border: 1px solid white;
+	font-family:"Helvetica", sans-serif;
+	box-sizing: border-box;
+	height:300px;
+}
+.nickname
+{
+	padding:1%;
+	font-size:2vw;
+	background-color:#a2b9bc;
+	text-shadow:2px 2px 8px #000000;
+	float:both;
+}
+.division
+{
+	padding:1%;
+	width:24%;
+	float:left;
+}
+.role
+{
+	padding:1%;
+	width:24%;
+	float:left;
+}
+.champions
+{
+	padding:1%;
+	width:52%;
+	float:left;
+}
+.match_history
+{
+	padding:1%;
+	float:both;
+}
