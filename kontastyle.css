@@ -8,7 +8,7 @@ body
 	color:white;
 	font-family:"Helvetica";
 }
-#header
+#header, #rest
 {
 	padding:2%;
 	text-align:center;
@@ -24,6 +24,20 @@ body
 {
 	letter-spacing:0.2rem;
 }
+.link
+{
+	padding:1%;
+	text-decoration: none;
+	color:white;
+	text-shadow:2px 2px 8px #000000;
+	background-color:#4CAF50;
+	border-radius:10px;
+}
+.link:hover
+{
+	transition: 0.3s;
+	background-color: #7FDF83;
+}
 .account
 {
 	display:flex;
@@ -31,20 +45,20 @@ body
 	width:80%;
 	box-shadow: 10px 10px 10px 9px rgba(240,248,255,1);
 	font-family:"Helvetica", sans-serif;
-	overflow:scroll;
-	scrollbar-width: none;
-}
-.account::-webkit-scrollbar {
-	width:0px;
-    background: transparent;
+	overflow:auto;
+	border-radius:10px;
 }
 .account:nth-of-type(odd)
 {
 	flex-direction: row-reverse;
 }
+.account:first-of-type
+{
+	margin-top:2%;
+}
 .nickname
 {
-	align-self: flex-start;
+	align-self: stretch;
 	text-align: center;
 	padding:5%;
 	font-size:2vw;
@@ -55,16 +69,17 @@ body
 .division, .role
 {
 	letter-spacing: 0.1rem;
-	line-height: 2vw;
-	align-self:center;
+	line-height: 1.5vw;
+	align-self:flex-start;
 	text-align:center;
 	padding:2%;
-	float:left;
 }
 .photo
 {
+	border-radius:10px;
+	margin-top:3%;
 	width:120px;
-	height:120px;
+	height: 120px;
 }
 .champions
 {
