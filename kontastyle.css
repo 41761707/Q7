@@ -28,9 +28,15 @@ body
 {
 	display:flex;
 	margin: 5% auto 5% auto;
-	width:85%;
+	width:80%;
 	box-shadow: 10px 10px 10px 9px rgba(240,248,255,1);
 	font-family:"Helvetica", sans-serif;
+	overflow:scroll;
+	scrollbar-width: none;
+}
+.account::-webkit-scrollbar {
+	width:0px;
+    background: transparent;
 }
 .account:nth-of-type(odd)
 {
@@ -38,7 +44,7 @@ body
 }
 .nickname
 {
-	align-self: stretch;
+	align-self: flex-start;
 	text-align: center;
 	padding:5%;
 	font-size:2vw;
@@ -49,7 +55,7 @@ body
 .division, .role
 {
 	letter-spacing: 0.1rem;
-	line-height: 1.5vw;
+	line-height: 2vw;
 	align-self:center;
 	text-align:center;
 	padding:2%;
@@ -70,6 +76,11 @@ body
 .champion-photo > img
 {
 	width:55%;
+}
+caption
+{
+	font-size:20px;
+	margin-bottom:2%;
 }
 .match_history
 {
