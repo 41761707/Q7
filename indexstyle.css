@@ -83,7 +83,7 @@ body
 }
 input[type=text], textarea, submit
 {
-	width:100%;
+	width:95%;
 	font-family:inherit;
   	padding: 12px; 
   	border: 1px solid #ccc;

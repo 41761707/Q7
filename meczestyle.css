@@ -1,0 +1,117 @@
+body
+{
+	background-color:#202020;
+	width:100%;	
+	box-sizing:border-box;
+}
+#container
+{
+	margin: 0 auto;
+	width:100%;
+}
+#header
+{
+	color:white;
+	font-family: "Helvetica",sans-serif;
+	text-align: center;
+}
+#title
+{
+	font-size:5vw;
+	letter-spacing:0.4rem;
+	font-weight: bold;
+}
+#description
+{
+	font-size:1.5vw;
+	line-height: 2rem;
+}
+.link
+{
+	font-size:2vw;
+	padding:1%;
+	text-decoration: none;
+	color:white;
+	text-shadow:2px 2px 8px #000000;
+	background-color:#4CAF50;
+	border-radius:10px;
+}
+.link:hover
+{
+	transition: 0.3s;
+	background-color: #7FDF83;
+}
+#matches
+{
+	width:50%;
+	margin: 5% auto;
+}
+.month 
+{
+	margin-top:2%;
+	background-color: #000;
+	color: white;
+	font-size:20px;
+	border-radius:15px;
+	cursor: pointer;
+	padding: 3%;
+	width: 100%;
+	text-align: center;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+.active, .accordion:hover 
+{
+	background-color: #ccc;
+}
+.content
+{
+	background-color: white;
+	display: none;
+	overflow: hidden;
+	font-family: "Helvetica", sans-serif;
+}
+.match
+{
+	margin:0;
+	overflow:auto;
+	white-space: nowrap;
+}
+.match-lost
+{
+	background-color:#F08080;
+}
+.match-won
+{
+	background-color: lightblue;
+}
+.MVP
+{
+	margin:0;
+	display:flex;
+	justify-content: center;
+}
+.lane
+{
+	display:flex;
+	justify-content: center;
+}
+.avatar, .enemy-avatar
+{
+	margin: 0 1%;
+}
+.avatar > img, .enemy-avatar > img
+{
+	width:40px;
+	border-radius:50%;
+}
+.nickname, .enemy-nickname
+{
+	margin: 0 1%;
+}
+.stats, .enemt-stats
+{
+	margin: 0% 4% 0% 1%;
+}
+
