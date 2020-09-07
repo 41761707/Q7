@@ -1,6 +1,9 @@
-Homepage (DONE)
-//altough think about better background style/colors
-Contact form (in progress, need to customize input windows + make it actually send a message to appointed mail
-TO DO
-Nasze konta
-O nas
+ALREADY DONE:
+-Homepage
+-Contact form on a homepage
+-Our accounts section
+NEEDS TO BE DONE:
+-About us section
+-Full functionality of contact form (because right now you can't send any messages to us)
+-Take more care of Match history section
+-Add secondary accounts of our players in our accounts section
