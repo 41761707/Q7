@@ -94,7 +94,18 @@ input[type=text], textarea, submit
 }
 input[type=submit]
 {
+	color:white;
+	font-size:20px;
 	cursor:pointer;
+	background-color:green;
+	border:0;
+	border-radius:10px;
+	width:20%;
+}
+input[type=submit]:hover
+{
+	transition: 0.3s;
+	background-color: #7FDF83;
 }
 #close
 {
